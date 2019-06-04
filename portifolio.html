@@ -11,18 +11,23 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portifolio.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <a href="index.html" class="grid-4"><img src="img/logo.png" alt="Bikecraft"></a>
+            <a href="index.html" class="grid-4 logo"><img src="img/logo.png" alt="Bikecraft"></a>
             <nav class="grid-12 header_menu">
-                <ul>
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="material-icons">menu</i>
+                </span>
+                <ul class="main-nav" id="js-menu">
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html" >Produtos</a></li>
-                    <li><a href="portifolio.html" class="menu_ativo">Portifólio</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="portifolio.html">Portifólio</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
@@ -37,22 +42,23 @@
     </section>
 
     <section class="container">
-			<blockquote class="quote_clientes">
-				<p>“No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.”</p>
-				<cite>Barbara Moss</cite>
-			</blockquote>
-		</section>
+        <blockquote class="quote_clientes">
+            <p>“No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão
+                inovadora da qual fazemos parte.”</p>
+            <cite>Barbara Moss</cite>
+        </blockquote>
+    </section>
 
     <section class="portifolio">
-            <div class="container">
-                <h2 class="subtitulo">Portifólio</h2>
-                <ul class="portifolio_lista">
-                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bike Retro"></li>
-                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bike Passeio"></li>
-                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bike Esporte"></li>
-                </ul>                
-            </div>
-        </section>
+        <div class="container">
+            <h2 class="subtitulo">Portifólio</h2>
+            <ul class="portifolio_lista">
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bike Retro"></li>
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bike Passeio"></li>
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bike Esporte"></li>
+            </ul>
+        </div>
+    </section>
 
     <section class="quebra">
         <blockquote class="quote-externo container">
@@ -96,5 +102,6 @@
     </footer>
 
 </body>
+<script type="text/javascript" src="js/mobile-menu.js"></script>
 
 </html>

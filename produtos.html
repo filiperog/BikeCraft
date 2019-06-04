@@ -11,17 +11,22 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <a href="index.html" class="grid-4"><img src="img/logo.png" alt="Bikecraft"></a>
+            <a href="index.html" class="grid-4 logo"><img src="img/logo.png" alt="Bikecraft"></a>
             <nav class="grid-12 header_menu">
-                <ul>
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="material-icons">menu</i>
+                </span>
+                <ul class="main-nav" id="js-menu">
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html" class="menu_ativo">Produtos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="portifolio.html">Portifólio</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
@@ -178,5 +183,6 @@
     </footer>
 
 </body>
+<script type="text/javascript" src="js/mobile-menu.js"></script>
 
 </html>

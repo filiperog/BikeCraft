@@ -9,6 +9,7 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .btn {
@@ -69,7 +70,6 @@ img {
     height: 3px;
     background: #000;
     margin: 8px 0;
-
 }
 
 .header {
@@ -82,32 +82,35 @@ img {
 }
 
 .header_menu {
-    text-align: right;
-
+	text-align: right;
 }
 
 .header_menu ul li {
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 20px
+	display: inline-block;
+	margin-left: 25px;
+	margin-top: 20px;
 }
 
 .header_menu ul li a {
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 10px 0;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 0;
 }
 
 .header_menu ul li a:hover {
-    color: #fff;
+	color: #FFF;
 }
 
 .header_menu ul li a.menu_ativo {
-    color: #fff;
+	color: #FFF;
+}
+
+.navbar-toggle {
+    display: none;
 }
 
 .introducao-interna {
@@ -272,7 +275,7 @@ img {
     position: absolute;
     top: 209px;
     right: 162px;
-    z-index: -1;   
+    z-index: -1;
 }
 
 .qualidade_lista {
