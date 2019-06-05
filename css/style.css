@@ -21,6 +21,7 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .1em;
+    transition: all .5s ease;
 }
 
 .btn:hover {
@@ -98,7 +99,8 @@ img {
 	letter-spacing: .1em;
 	font-size: 14px;
 	line-height: 20px;
-	padding: 10px 0;
+    padding: 10px 0;
+    transition: all .3s ease;
 }
 
 .header_menu ul li a:hover {
@@ -236,26 +238,26 @@ img {
     margin-bottom: 20px;
 }
 
-.portifolio {
-    width: 100%;
-    background: #000;
-    padding: 40px 0;
+.portfolio {
+	width: 100%;
+	background: #000;
+	padding: 40px 0;
 }
 
-.portifolio .subtitulo {
-    color: #fec63e;
+.portfolio .subtitulo {
+	color: #fec63e;
 }
 
-.portifolio .subtitulo::after {
-    background: #fec63e;
+.portfolio .subtitulo:after {
+	background: #fec63e;
 }
 
-.portifolio_lista li:last-child {
-    margin-top: 20px;
+.portfolio_lista div:last-of-type {
+	margin-top: 20px;
 }
 
-.portifolio .call p {
-    color: #fff;
+.portfolio .call p {
+	color: #fff;
 }
 
 .qualidade {
@@ -363,6 +365,7 @@ img {
     border: 3px solid #fec63e;
     display: block;
     padding: 10px;
+    transition: all .5s ease;
 }
 
 .footer_redes ul li a:hover {
@@ -374,4 +377,48 @@ img {
     background: #fec63e;
     padding: 20px 0;
     text-align: center;
+}
+
+.js .introducao h1, .js .introducao blockquote, .js .introducao .btn, .js .animar, .js .animar-interno, .js .introducao-interna h1, .js .introducao-interna p {
+	opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
 }
