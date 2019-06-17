@@ -9,6 +9,10 @@
 
 .contato_form {
 	padding-right: 60px;
+	@include d(m){
+		padding-right: 0px;
+        margin-bottom: 40px;
+	}
 }
 
 .contato_form label{
@@ -50,8 +54,7 @@
 }
 
 .contato_dados h3{
-	font-size: 18px;
-	line-height: 25px;
+	@include type-1(18);
 	text-transform: uppercase;
 	color: $cor-primaria;
 	font-weight: bold;

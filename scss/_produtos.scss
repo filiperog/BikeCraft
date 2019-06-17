@@ -8,7 +8,7 @@
 }
 
 .produto_item h2 {
-    font-size: 36px;
+    @include type-1(36);
     color: $white;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -17,6 +17,15 @@
     top: -180px;
     text-align: center;
     margin-bottom: -56px;
+    @include d(t) {
+        top: -150px;
+        margin-bottom: -56px;
+    }
+    @include d(m){
+        top: -100px;
+        margin-bottom: -68px;
+
+    }
 }
 
 .produto_item h2::after,
@@ -32,6 +41,12 @@
 .produto_icone {
     background: $black;
     padding: 70px 0;
+    @include d(t) {
+        padding: 41px 0;
+    }
+    @include d(m){
+        padding: 41px 0;
+    }
 }
 
 .produto_icone img {
@@ -44,22 +59,43 @@
 
 .produto_info p {
     color: $white;
-    font-size: 18px;
-    line-height: 25px;
+    @include type-1(18);
     padding: 30px 40px;
     height: 180px;
+
+    @include d(t) {
+        @include type-1(14);
+        height: 122px;
+        padding: 20px 30px;
+    }
+
+    @include d(m){
+        @include type-1(14);
+        height: auto;
+        padding: 20px 30px;
+    }
 }
 
 .produto_info ul li {
     background: $cor-primaria;
     text-transform: uppercase;
     text-align: center;
-    font-size: 18px;
+    @include type-1(18);
     font-weight: bold;
     float: left;
     width: 229px;
     height: 49px;
     padding-top: 16px;
+    @include d(t) {
+        width: 181px;
+        height: 49px;
+    }
+    @include d(m){
+        width: 149px;
+        height: 49px;
+        @include type-1(14);
+        padding-top: 14px;
+    }
 }
 
 .produto_info ul li:nth-child(1),
@@ -88,11 +124,14 @@
 
 .form {
     padding-right: 60px;
+    @include d(m){
+        padding-right: 0px;
+    }
 }
 
 .form label {
     display: block;
-    color: $white;   
+    color: $white;
     margin-bottom: 4px;
     @include type-2(18);
 }
@@ -132,8 +171,7 @@
 }
 
 .orcamento_dados h3 {
-    font-size: 18px;
-    line-height: 25px;
+    @include type-1(18);
     text-transform: uppercase;
     color: $cor-primaria;
     font-weight: bold;
@@ -150,7 +188,10 @@
 }
 
 .orcamento_dados ul {
-    padding-right: 60px
+    padding-right: 60px;
+    @include d(m){
+        padding-right: 0px;
+    }
 }
 
 .orcamento_dados ul li {
